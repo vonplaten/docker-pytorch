@@ -1,0 +1,21 @@
+version: "2.3"
+services:
+  mypytorchdev:
+    build: .
+    image: my/pytorch_1_3:mypt_l2
+    runtime: nvidia
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    ipc: host
+    user: casi
+    volumes:
+      # - /home/casi/proj/8severtal_pt/src:/home/casi/severtal/
+      # - /home/casi/proj/8severtal_pt/data:/home/casi/input
+      - my-vscode-server:/home/casi/.vscode-server
+      - my-vscode-server-insiders:/home/casi/.vscode-server-insiders
+    container_name: mypt
+
+volumes:
+  my-vscode-server:
+  my-vscode-server-insiders:

@@ -1,0 +1,7 @@
+version: '2.3'
+services:
+  mypytorchdev:
+    volumes:
+      - /home/casi/dev/proj/10myunet/workspace:/home/casi/workspace
+    command: sleep infinity
+ 

@@ -1,0 +1,6 @@
+version: "2.3"
+services:
+  mypytorchbase:
+    build: .
+    image: my/pytorch_1_3:mypt_l1
+

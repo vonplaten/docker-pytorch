@@ -3,7 +3,7 @@ services:
   mypytorchdev:
     build: .
     image: my/pytorch_1_3:mypt_l2
-    runtime: nvidia
+    # runtime: nvidia  ##only linux
     ports:
       - "8888:8888"
       - "6006:6006"
